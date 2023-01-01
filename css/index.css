@@ -1,0 +1,71 @@
+[data-todo-option="completed"] .todo__item:not([data-todo-state="completed"]),
+[data-todo-option="active"] .todo__item:not([data-todo-state="active"]),
+[data-todo-option="deleted"] .todo__item:not([data-todo-state="deleted"]) {
+    display: none;
+}
+
+[data-todo-state="active"] .todo__action_restore,
+[data-todo-state="completed"] .todo__action_complete,
+[data-todo-state="deleted"] .todo__action_complete {
+    display: none;
+}
+
+body {
+    background-color: rgb(201, 201, 200);
+}
+
+.wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.todo__options {
+    margin-left: 20px;
+}
+
+.todo__item {
+    margin-bottom: 3px;
+}
+
+.todo__items {
+    padding-left: 15px;
+}
+
+.todo__info li {
+    display: flex;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+.todo__info p {
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.todo__info div {
+    border: 1px black solid;
+}
+
+.todo__info {
+    padding: 0;
+    margin: 0;
+}
+
+.todo__action_restore {
+    display: inline-block;
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+}
+
+.todo__action_complete {
+    background-color: green;
+    height: 20px;
+    width: 20px;
+}
+
+.todo__action_delete {
+    background-color: red;
+    height: 20px;
+    width: 20px;
+}
